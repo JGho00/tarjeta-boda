@@ -44,20 +44,23 @@
 
   /* ===================== COVER / ENVELOPE ===================== */
   #cover{
-    position:fixed; inset:0; z-index:50; background:linear-gradient(160deg, var(--terracotta) 0%, var(--terracotta-deep) 100%);
+    position:fixed; inset:0; z-index:50;
+    background:
+      linear-gradient(160deg, rgba(201,169,140,.82) 0%, rgba(168,138,109,.9) 100%),
+      url('img/novios_fondo1.jpeg') center 30%/cover no-repeat;
     display:flex; align-items:center; justify-content:center; flex-direction:column;
     transition:opacity .8s ease, visibility .8s ease;
   }
   #cover.hidden{opacity:0; visibility:hidden; pointer-events:none;}
   .envelope-flap{
     position:absolute; top:0; left:0; right:0; height:52%;
-    background:linear-gradient(200deg, var(--terracotta-deep), var(--terracotta));
+    background:linear-gradient(200deg, #A88A6D, #C9A98C);
     clip-path:polygon(0 0, 100% 0, 50% 100%);
     opacity:.55;
   }
-  .cover-inner{position:relative; text-align:center; color:var(--cream); padding:2rem;}
-  .cover-eyebrow{font-size:1.1rem; letter-spacing:.35em; text-transform:uppercase; opacity:.8; margin-bottom:1.2rem;}
-  .cover-monogram{font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:clamp(3.4rem,14vw,5.5rem); line-height:1; color:var(--cream);}
+  .cover-inner{position:relative; text-align:center; color:var(--ink); padding:2rem;}
+  .cover-eyebrow{font-size:1.1rem; letter-spacing:.35em; text-transform:uppercase; opacity:.85; margin-bottom:1.2rem;}
+  .cover-monogram{font-family:'Cormorant Garamond', serif; font-style:italic; font-weight:600; font-size:clamp(3.4rem,14vw,5.5rem); line-height:1; color:var(--ink);}
   .cover-monogram .amp{color:var(--gold-soft); font-size:.6em;}
   .wax-seal{width:92px; height:92px; margin:1.8rem auto 0;}
   .btn-ingresar{
@@ -75,7 +78,12 @@
   #content.show{opacity:1;}
 
   /* HERO */
-  .hero{min-height:92svh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:3rem 1.5rem;}
+  .hero{
+    min-height:92svh; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:3rem 1.5rem;
+    background:
+      linear-gradient(rgba(243,233,220,.85), rgba(243,233,220,.85)),
+      url('img/manos_novios.jpeg') center 35%/cover no-repeat;
+  }
   .hero h1{font-size:clamp(2.5rem,9vw,4.2rem); font-weight:500; font-style:italic; line-height:1.05; color:var(--terracotta-deep);}
   .hero .amp{color:var(--gold); font-size:.75em; padding:0 .1em;}
   .hero .date-line{margin-top:1.2rem; font-size:1rem; letter-spacing:.12em; color:var(--ink-soft);}
@@ -266,19 +274,6 @@
       <div class="date-card">
         <div class="eyebrow">Dress code</div>
         <div class="date-sub" style="font-family:'Cormorant Garamond', serif; font-style:italic; font-size:1.6rem; margin-top:.4rem;">Elegante</div>
-        <div class="dress-icons">
-          <svg viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M30 6 V74" stroke="#A14E36" stroke-width="1.4"/>
-            <path d="M18 12 L30 6 L42 12 L36 20 L30 16 L24 20 Z" stroke="#A14E36" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M20 20 L14 70 H46 L40 20" stroke="#A14E36" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M27 34 L30 40 L33 34" stroke="#A14E36" stroke-width="1.3"/>
-          </svg>
-          <svg viewBox="0 0 60 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M30 6 C 20 10, 18 16, 20 24 L 14 74 H 46 L 40 24 C 42 16, 40 10, 30 6 Z" stroke="#A14E36" stroke-width="1.6" stroke-linejoin="round"/>
-            <path d="M24 24 Q30 30 36 24" stroke="#A14E36" stroke-width="1.3"/>
-          </svg>
-        </div>
-        <div class="date-place">Ellas: vestido largo · Ellos: traje y corbata</div>
       </div>
     </div>
   </section>

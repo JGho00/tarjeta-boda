@@ -7,7 +7,7 @@
 <meta name="description" content="Nos casamos. Acompañanos a celebrar.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
   :root{
     --cream:#F3E9DC;
@@ -88,7 +88,7 @@
       linear-gradient(rgba(243,233,220,.85), rgba(243,233,220,.85)),
       url('img/manos_novios.jpeg') center 35%/cover no-repeat;
   }
-  .hero h1{font-size:clamp(2.5rem,9vw,4.2rem); font-weight:500; font-style:italic; line-height:1.05; color:var(--ink);}
+  .hero h1{font-size:clamp(2.5rem,9vw,4.2rem); font-weight:600; font-style:italic; line-height:1.05; color:var(--ink);}
   .hero .amp{color:var(--gold); font-size:.75em; padding:0 .1em;}
   .hero .date-line{margin-top:1.2rem; font-size:1rem; letter-spacing:.12em; color:var(--ink-soft);}
   .hero blockquote{
@@ -133,7 +133,7 @@
   .dress-icons svg{width:56px; height:76px;}
 
   /* ITINERARY */
-  .itin-list{display:flex; justify-content:space-between; align-items:flex-start; gap:.4rem; overflow-x:auto; padding:.5rem 0 1rem;}
+  .itin-list{display:flex; justify-content:space-between; align-items:flex-start; gap:.4rem; overflow-x:auto; padding:1rem .5rem 1.4rem; background:var(--cream); border-radius:8px; position:relative; z-index:2;}
   .itin-item{text-align:center; min-width:78px; flex:1;}
   .itin-item svg, .itin-item img{width:40px; height:40px; margin:0 auto .5rem; object-fit:contain;}
   .itin-time{font-family:'Cormorant Garamond', serif; font-weight:600; font-size:1rem; color:var(--ink);}
@@ -156,6 +156,7 @@
 
   .confirm-box{border:1px solid var(--terracotta-deep); background:var(--cream); border-radius:4px; padding:1.1rem 1.4rem; margin-top:1.2rem;}
   .confirm-box strong{color:var(--terracotta-deep);}
+  .confirm-box strong.value{color:var(--ink);}
 
   /* COUNTDOWN CARD */
   .cd-card{background:var(--terracotta-deep); color:var(--cream); border-radius:4px; padding:2.6rem 1.6rem; text-align:center;}
@@ -348,10 +349,10 @@
         <h3>Luna de miel</h3>
         <p>Nuestro mejor regalo es que estés con nosotros en nuestro día. Pero si querés hacernos un obsequio, aquí está nuestra cuenta.</p>
         <div class="alias-box">
-          <code id="alias-text">paredes.93mp</code>
+          <code id="alias-text">CAROYEZE09</code>
           <button class="copy-btn" onclick="copyAlias()">Copiar</button>
         </div>
-        <p style="font-size:.72rem; margin-top:.5rem; opacity:.75;">CBU: 0000003100009413072680</p>
+        <p style="font-size:.72rem; margin-top:.5rem; opacity:.75;">CBU: 4530000800011799354153</p>
         <p style="font-size:.72rem; margin-top:.5rem; opacity:.75;">Titular: Aldo Ezequiel Paredes</p>
         
       </div>
@@ -368,10 +369,10 @@
           <strong>Confirmación requerida</strong><br>
           hasta el 20 de septiembre de 2026.<br>
           Comunicate con Paredes Ezequiel · 3804&nbsp;855163<br><br>
-          Valor de la tarjeta $105.000.<br>
-          Alias: paredes.93mp<br>
-          CVU: 0000003100009413072680<br>
-          Nombre: Aldo Ezequiel Paredes
+          Valor de la tarjeta <strong class="value">$105.000</strong>.<br>
+          Alias: <strong class="value">paredes.93mp</strong><br>
+          CVU: <strong class="value">0000003100009413072680</strong><br>
+          Nombre: <strong class="value">Aldo Ezequiel Paredes</strong>
         </div>
       </div>
     </div>
